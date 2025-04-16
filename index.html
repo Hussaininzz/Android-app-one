@@ -103,10 +103,9 @@
         }
 
         // Replace these APIs with your actual API sources
-        const randomApi = "e1e592716a16422192cdcb0531565dc9";
-        const latestApi = "e1e592716a16422192cdcb0531565dc9";
-        const trendingApi = "e1e592716a16422192cdcb0531565dc9";
-
+        const randomApi = `https://newsapi.org/v2/top-headlines?country=us&apiKey=e1e592716a16422192cdcb0531565dc9`;
+        const latestApi = `https://newsapi.org/v2/everything?q=latest&sortBy=publishedAt&apiKey=e1e592716a16422192cdcb0531565dc9`;
+        const trendingApi = `https://newsapi.org/v2/top-headlines?category=general&sortBy=popularity&apiKey=e1e592716a16422192cdcb0531565dc9`;
         // Fetch and populate posts
         fetchPosts(randomApi, "randomPosts");
         fetchPosts(latestApi, "latestPosts");
